@@ -48,11 +48,33 @@ summary(Paivio)
 plot(Paivio[,c(3:5,9)])
 
 # density plots
-plot(density(Paivio$imagery))
-plot(density(Paivio$concreteness))
-plot(density(Paivio$meaningfulness))
-plot(density(Paivio$frequency))
-rug(jitter(Paivio$frequency))
+mydens <- function(data, var, ...) {
+	title = paste0( deparse(substitute(data)), ": ", var)
+	plot(density(data[,var], na.rm=TRUE), main=title, ...) 
+	rug(jitter(data[,var]))
+}
+
+mydens(Paivio, "imagery")
+mydens(Paivio, "concreteness")
+mydens(Paivio, "meaningfulness")
+mydens(Paivio, "frequency")
+mydens(Paivio, "syl")
+mydens(Paivio, "letters")
+mydens(Paivio, "freerecall")
+
+
+
+# find ranges & 5 num summaries
+ranges <- as.data.frame(apply(Paivio[,-(1:2)], 2, function(x) range(na.omit(x))))
+rownames(ranges) <- c("min", "max")
+ranges
+
+P5num <- as.data.frame(apply(Paivio[,3:5], 2, fivenum))
+rownames(P5num) <- c("min", "Q1", "med", "Q3", "max")
+P5num
+
+
+
 
 }
 \keyword{datasets}

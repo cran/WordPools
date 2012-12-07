@@ -21,11 +21,21 @@ and control such factors.
 \tabular{ll}{
 Package: \tab WordPools\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2012-11-26\cr
+Version: \tab 1.0-1\cr
+Date: \tab 2012-12-07\cr
 License: \tab GPL-2\cr
 }
-% ~~ An overview of how to use the package, including the most important functions ~~
+At present, the package contains three main word pools:
+
+\code{\link{Paivio}} - the Paivio etal. (1968) word list of 925 nouns
+
+\code{\link{TWP}} - the Friendly etal. (1982) Toronto Word Pool of 1080 words in various grammatical classes
+
+\code{\link{Battig}} - the Battig & Montague (1969) Categorized Word Norms, containing 5231 words listed in 
+56 taxonomic categories.  Various measures on these categories are given in \code{\link{CatProp}}.
+
+In addition, the function \code{\link{pickList}} provides the ability to select items from such
+lists with restrictions on the ranges of the measured variables.
 }
 \author{
 Michael Friendly
@@ -35,7 +45,8 @@ Maintainer: Michael Friendly <friendly@yorku.ca>
 \references{
 Friendly, M. Word list generator. \url{http://datavis.ca/online/paivio/}
 
-See also \url{http://memory.psych.upenn.edu/Word_Pools} for other related word pools
+See also \url{http://memory.psych.upenn.edu/Word_Pools} 
+and \url{http://www.psych.rl.ac.uk/MRC_Psych_Db.html} for other related word pools
 
 }
 %~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R ~~
