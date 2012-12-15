@@ -1,4 +1,4 @@
-8356d978fe3e7ffdb45d546cfbcf03b1 *DESCRIPTION
+3e4afb3d126cb3424091a5311fae31d3 *DESCRIPTION
 df390c53434517b304ac5db487184641 *NAMESPACE
 7818307952ba04e4ca234ae7a6298f8b *R/pickList.R
 ff405d27fa5203becc5f5ad56ab6ca6c *data/Battig.RData
@@ -7,7 +7,7 @@ cfa30bdf40f6acf81f54778b568ddf3f *data/CatProp.RData
 cd952b7185fa71c9d6fc76a93bd91a76 *data/TWP.RData
 25e4b2a71c45465cb07edf8094594e6b *man/Battig.Rd
 9e6df65f5292fcd93a56c90838e9c8ec *man/CatProp.Rd
-7274fed862f4735582cdf43c7e4c06ad *man/Paivio.Rd
+8045460d451807359c50da9689f42eef *man/Paivio.Rd
 35033e40785fbf2e37b1d5c966088283 *man/TWP.Rd
-4ffa056ab1611121ecb37e8f9aae9e95 *man/WordPools-package.Rd
+3b0abb0a2839ee7eb21e05b95010b93c *man/WordPools-package.Rd
 cc3a5c8cebd2c02fdf9735736b70732a *man/pickList.Rd
