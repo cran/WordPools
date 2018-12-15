@@ -5,7 +5,7 @@
 Paivio, Yuille & Madigan Word Pool
 }
 \description{
-The Paivio, Yuille & Madigan word pool contains 925 nouns,
+The Paivio, Yuille & Madigan (1968) word pool contains 925 nouns,
 together with average ratings of these words on imagery,
 concreteness and meaningfulness, along with other 
 variables.
@@ -40,7 +40,11 @@ meaningfulness, and frequency. \emph{Memory & Cognition}, 6, 379-390.
 
 \references{
 Kucera and Francis, W.N. (1967). 
-\emph{Computational Analysis of Present-Day American English}. Providence: Brown University Press. 
+\emph{Computational Analysis of Present-Day American English}. Providence: Brown University Press.
+
+Rubin, D. C. & Friendly, M. (1986).
+Predicting which words get recalled: Measures of free recall, availability, goodness, emotionality, and pronunciability for 925 nouns.
+\emph{Memory and Cognition}, 14, 79-94.
 }
 \examples{
 data(Paivio)
@@ -48,19 +52,14 @@ summary(Paivio)
 plot(Paivio[,c(3:5,9)])
 
 # density plots
-mydens <- function(data, var, ...) {
-	title = paste( deparse(substitute(data)), ": ", var, sep="")
-	plot(density(data[,var], na.rm=TRUE), main=title, ...) 
-	rug(jitter(data[,var]))
-}
 
-mydens(Paivio, "imagery")
-mydens(Paivio, "concreteness")
-mydens(Paivio, "meaningfulness")
-mydens(Paivio, "frequency")
-mydens(Paivio, "syl")
-mydens(Paivio, "letters")
-mydens(Paivio, "freerecall")
+plotDensity(Paivio, "imagery")
+plotDensity(Paivio, "concreteness")
+plotDensity(Paivio, "meaningfulness")
+plotDensity(Paivio, "frequency")
+plotDensity(Paivio, "syl")
+plotDensity(Paivio, "letters")
+plotDensity(Paivio, "freerecall")
 
 
 

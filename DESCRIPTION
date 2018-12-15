@@ -1,23 +1,24 @@
 Package: WordPools
 Type: Package
-Title: Classical word pools used in studies of learning and memory
-Version: 1.0-2
-Date: 2012-12-15
-Authors@R: person(given = "Michael", family = "Friendly", role=c("aut",
-        "cre"), email="friendly@yorku.ca")
-Author: Michael Friendly
+Title: Classical Word Pools Used in Studies of Learning and Memory
+Version: 1.1-1
+Date: 2018-12-14
+Authors@R: person(given = "Michael", family = "Friendly", role=c("aut", "cre"), 
+    email="friendly@yorku.ca", comment=c(ORCID="0000-0002-3237-0941"))
 Maintainer: Michael Friendly <friendly@yorku.ca>
-Description: This package collects several classical word pools used
-        most often to provide lists of words in psychological studies
-        of learning and memory.
-Suggests:
+Description: Collects several classical word pools used most often
+    to provide lists of words in psychological studies of learning and memory. It
+    provides a simple function, 'pickList' for selecting random samples of words
+    within given ranges.
+Suggests: dplyr
 Depends: R (>= 2.10)
 License: GPL-2
 LazyLoad: yes
 LazyData: yes
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2018-12-15 13:40:40 UTC; friendly
+Author: Michael Friendly [aut, cre] (<https://orcid.org/0000-0002-3237-0941>)
 Repository: CRAN
-Repository/R-Forge/Project: wordpools
-Repository/R-Forge/Revision: 14
-Repository/R-Forge/DateTimeStamp: 2012-12-15 17:19:31
-Date/Publication: 2012-12-16 16:59:53
-Packaged: 2012-12-15 19:15:50 UTC; rforge
+Date/Publication: 2018-12-15 14:10:07 UTC
